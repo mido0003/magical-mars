@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Reset from "../CSS/reset.css";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+  <main>
+    <div>
+      <h1>Nordic Lamps</h1>
+      <p>
+        Nordic Lamps is a brand that Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. & More Information
+      </p>
+      <a href="/pages/cases">& More information</a>
+    </div>
+    <img src="/assets/Noblelamp.webp" alt="Brand" />
+    <div>
+      <h2>Before Tóki design</h2>
+      <img src="/assets/BeforeNoblelamp.webp" alt="Before" />
+    </div>
+    <div>
+      <h2>After Tóki design</h2>
+      <img src="/assets/Noblelamp.webp" alt="Brand" />
+    </div>
+    <div>
+      <p>
+        We rearranged the packaging for Nordic lamps Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore,
+        dolor sit amet, consectetur
+      </p>
+      <img src="/assets/Nordiclampsopenbox.webp" alt="Openbox" />
+    </div>
+    <div>
+      <p>
+        Nordic Lamps is a brand that Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. sed do eiusmod, ut labore et dolore magna aliqua.
+      </p>
+      <img src="/assets/Nordiclampslogo.webp" alt="Nodiclampslogo" />
+      <p>Logo Design:</p>
+      <p>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do
+        eiusmod tempor incididunt ut labore
+      </p>
+    </div>
+    <div>
+      <img src="/assets/Totalyopenboxnordiclamps.webp" alt="Totalyopenbox" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod t
+        empor incididunt ut labore et dolore magna aliqua. sed do eiusmod, ut
+        labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <div class="cta">Contact us</div>
+  </main>
+</Layout>
+
+<style>
+  /* --- MOBILE VERSION --- */
+
+  body {
+    margin: 11rem;
+  }
+
+  @media (max-width: 768px) {
+    .cta {
+      background-color: #3a544a;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background-color 0.25s ease; /* smooth hover */
+    }
+
+    .cta:hover {
+      background-color: #ff815c;
+    }
+
+    /* GRID SECTIONS MOBILE VERSION */
+    .forside-sections {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      padding: 2px;
+    }
+  }
+</style>
